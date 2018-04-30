@@ -1,4 +1,4 @@
-- hosts: all
+- hosts: jenkins
   sudo: yes
   pre_tasks:
   - name: Ensure git is installed.
