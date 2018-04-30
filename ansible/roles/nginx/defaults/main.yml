@@ -1,0 +1,8 @@
+---
+sites:
+  myapp:
+    frontend: 80
+    backend: 80
+  app02:
+    frontend: 443
+    backend: 80

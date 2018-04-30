@@ -1,0 +1,31 @@
+[loadbalancer]
+lb01
+
+[webserver]
+app01
+app02
+
+[database]
+db01
+
+[control]
+control ansible_connection=local
+
+[jenkins_ci]
+jenkins
+
+[loadbalancer:vars]
+ansible_user= vagrant
+ansible_connection= ssh
+
+[webserver:vars]
+ansible_user= vagrant
+ansible_connection= ssh
+
+[database:vars]
+ansible_user= vagrant
+ansible_connection= ssh
+
+[jenkins_ci:vars]
+ansible_user= vagrant
+ansible_connection= ssh
